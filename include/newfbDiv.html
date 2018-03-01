@@ -1,0 +1,331 @@
+<!-- 新的发布弹层部分开始 -->
+
+<div class="newfbDiv tcDiv">
+  <div class="tcTop">
+    <span class="fl">发布管理</span>
+    <span class="newfbDiv_cancelBtn fr">X</span>
+  </div>
+  <div class="fbPlanCxDiv">
+    <div class="TakeTimes">生效时间：</div>
+    <input id="TakeTimeStart" class="TakeTimesInput" type="text" readonly="true">
+    <img src="images/backStage/date.png" class="dateIcon">
+    <span class="fl toText1">至</span>
+    <input id="TakeTimeEnd" class="TakeTimesInput" type="text" readonly="true">
+    <img src="images/backStage/date.png" class="dateIcon">
+    <div class="TakeState">状态：</div>
+    <select class="TakeTimesInput">
+      <option value="全部">全部</option>
+      <option value="已生效">已生效</option>
+      <option value="未生效">未生效</option>
+    </select>
+
+    <input type="button" class="resetCxBtn1 tcBtn fr" value="重置">
+    <input type="button" class="PlanCxBtn1 tcBtn fr" value="查询">
+  </div>
+  <table class="PlanCxResult">
+    <tr>
+      <th class="planName">名称</th>
+      <th class="planTakeTimes">生效时间</th>
+      <th class="planState">状态</th>
+      <th class="planCz">操作</th>
+    </tr>
+    <tr>
+      <td>苹果8banner、流量专区7.10上架</td>
+      <td>2016/7/10    0:00:00</td>
+      <td>已生效</td>
+      <td>
+        <span class="preview">预览</span>
+        <span class="PlanTrDel">删除</span>
+      </td>
+    </tr>
+    <tr>
+      <td>宽带广告位6.29下架</td>
+      <td>2016/6/29    23:59:59</td>
+      <td>已生效</td>
+      <td>
+        <span class="preview">预览</span>
+        <span class="PlanTrDel">删除</span>
+      </td>
+    </tr>
+    <tr>
+      <td>618banner、门楣6.20下架</td>
+      <td>2016/6/20    23:59:59</td>
+      <td>未生效</td>
+      <td>
+        <span class="preview">预览</span>
+        <span class="PlanTrDel">删除</span>
+      </td>
+    </tr>
+    <tr>
+      <td>618banner、门楣6.12上架</td>
+      <td>2016/6/12    0:00:00</td>
+      <td>未生效</td>
+      <td>
+        <span class="preview">预览</span>
+        <span class="PlanTrDel">删除</span>
+      </td>
+    </tr>
+  </table>
+  <div class="PageDivW">
+      <div class="x_daohang">
+        <span>
+          共9页&nbsp;跳转至&nbsp;&nbsp;<input style="text" class="k_kuan4 b_bk">&nbsp;页&nbsp;
+         <a href="#"><input type="button" name="" class="tz_anniu tcBtn" value="跳转"></a>
+       </span>
+      </div>
+       <div class="x_daohang">
+           <ul class="k_kuan3 s_shou ul_leibiao">
+               <li>
+                   <img src="images/backStage/arrowLeft_grey.png" class="pageBtnLeft">
+               </li>
+               <li class="PageLi PageNow">1</li>
+               <li class="PageLi">2</li>
+               <li class="PageLi">3</li>
+               <li class="PageLi">4</li>
+               <li class="PageLi">5</li>
+               <li>
+                   <img src="images/backStage/arrowRight.png" class="pageBtnRight">
+               </li>
+           </ul>
+       </div>
+       <div class="x_daohang">	<span>共90条&nbsp;&nbsp;每页</span>
+           <select class="yema">
+               <option value="">10条</option>
+               <option value="">9条</option>
+               <option value="">8条</option>
+               <option value="">7条</option>
+               <option value="">6条</option>
+               <option value="">5条</option>
+           </select>
+       </div>
+   </div>
+
+  <div class="newPlanDiv">
+    <p class="newPlanTxt1">新增计划</p>
+    <div class="newPlanSetDiv">
+      <p class="SetTit">开始时间：</p>
+      <input id="newPlanTimeStart" class="TakeTimesInput bgFFF" type="text" readonly="true">
+      <img src="images/backStage/date.png" class="dateIcon">
+      <br></br>
+      <p class="SetTit">结束时间：</p>
+      <input id="newPlanTimeEnd" class="TakeTimesInput bgFFF" type="text" readonly="true">
+      <img src="images/backStage/date.png" class="dateIcon">
+      <br></br>
+      <p class="SetTit">名称：</p>
+      <input type="text" name="newPlanName" maxLength="15" value="名称不超过15个字" class="newPlanName color999 bgFFF">
+    </div>
+    <table class="floorFbSelect">
+      <tr>
+        <th class="floorCheckbox"><input type="checkbox" class="checkAll1"></th>
+        <th class="floorName1">模块名称</th>
+        <th class="floorBjPro">备份说明</th>
+        <th class="floorBjTime">备份时间</th>
+        <th class="floorState">状态</th>
+        <th class="floorBjPerson">操作人</th>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="checkAll2"></td>
+        <td>门楣广告</td>
+        <td>备份说明备份说明</td>
+        <td>2016/7/10    0:00:00</td>
+        <td>未发布</td>
+        <td>李靖</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="checkAll2"></td>
+        <td>banner</td>
+        <td>备份说明备份说明</td>
+        <td>2016/6/29    23:59:59</td>
+        <td>未发布</td>
+        <td>李靖</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="checkAll2"></td>
+        <td>联通精选</td>
+        <td>备份说明备份说明</td>
+        <td>2016/6/20    23:59:59</td>
+        <td>未发布</td>
+        <td>李靖</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="checkAll2"></td>
+        <td>流量专区</td>
+        <td>备份说明备份说明</td>
+        <td>2016/6/12    0:00:00</td>
+        <td>未发布</td>
+        <td>李靖</td>
+      </tr>
+    </table>
+    <div class="PageDivW" style="background:#f2f2f2;">
+        <div class="x_daohang">
+          <span>
+            共9页&nbsp;跳转至&nbsp;&nbsp;<input style="text" class="k_kuan4 b_bk">&nbsp;页&nbsp;
+           <a href="#"><input type="button" name="" class="tz_anniu tcBtn" value="跳转"></a>
+         </span>
+        </div>
+         <div class="x_daohang">
+             <ul class="k_kuan3 s_shou ul_leibiao">
+                 <li>
+                     <img src="images/backStage/arrowLeft_grey.png" class="pageBtnLeft">
+                 </li>
+                 <li class="PageLi PageNow">1</li>
+                 <li class="PageLi">2</li>
+                 <li class="PageLi">3</li>
+                 <li class="PageLi">4</li>
+                 <li class="PageLi">5</li>
+                 <li>
+                     <img src="images/backStage/arrowRight.png" class="pageBtnRight">
+                 </li>
+             </ul>
+         </div>
+         <div class="x_daohang">	<span>共90条&nbsp;&nbsp;每页</span>
+             <select class="yema">
+                 <option value="">10条</option>
+                 <option value="">9条</option>
+                 <option value="">8条</option>
+                 <option value="">7条</option>
+                 <option value="">6条</option>
+                 <option value="">5条</option>
+             </select>
+         </div>
+     </div>
+    <div class="fbAreas">
+      <p class="countryP">
+        <span class="fl">发布区域：</span>
+        <input type="checkbox" name="fbArea" class="countryCheck" data-id="country">
+        <span>全国</span>
+      </p>
+      <ul class="shengfenUl">
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="内蒙古">
+          <span>内蒙古</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="北京">
+          <span>北京</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="天津">
+          <span>天津</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="山东">
+          <span>山东</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="河北">
+          <span>河北</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="山西">
+          <span>山西</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="安徽">
+          <span>安徽</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="上海">
+          <span>上海</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="江苏">
+          <span>江苏</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="浙江">
+          <span>浙江</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="福建">
+          <span>福建</span>
+        </li><li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="海南">
+          <span>海南</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="广东">
+          <span>广东</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="广西">
+          <span>广西</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="青海">
+          <span>青海</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="湖北">
+          <span>湖北</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="湖南">
+          <span>湖南</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="江西">
+          <span>江西</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="河南">
+          <span>河南</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="西藏">
+          <span>西藏</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="四川">
+          <span>四川</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="重庆">
+          <span>重庆</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="陕西">
+          <span>陕西</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="贵州">
+          <span>贵州</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="甘肃">
+          <span>甘肃</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="云南">
+          <span>云南</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="宁夏">
+          <span>宁夏</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="新疆">
+          <span>新疆</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="吉林">
+          <span>吉林</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="辽宁">
+          <span>辽宁</span>
+        </li>
+        <li>
+          <input type="checkbox" name="fbArea" class="shengfenCheck" data-id="黑龙江">
+          <span>黑龙江</span>
+        </li>
+        <div class="clrDiv"></div>
+      </ul>
+    </div>
+    <div class="tcbtnDiv borderTn marginT0">
+        <input type="button" class="newfbDiv_fabuBtn tcBtn" value="确认发布">
+        <input type="button" class="newfbDiv_cancelBtn tcBtn" value="取消">
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,81 @@
+
+<!-- 页面备份记录弹层部分开始 -->
+<div class="tcDiv pageRecordsManageDiv">
+    <div class="tcTop">
+        <span class="fl">备份记录</span>
+        <span class="colseBtn fr">X</span>
+    </div>
+    <div class="fbPlanCxDiv">
+        <div class="bfTimes">备份时间：</div>
+        <input id="pageBakStartTime" class="bfTimesInput" type="text" readonly="true">
+        <img src="../images/backStage/date.png" class="dateIcon">
+        <span class="fl toText1">至</span>
+        <input id="pageBakEndTime" class="bfTimesInput" type="text" readonly="true">
+        <img src="..//images/backStage/date.png" class="dateIcon">
+        <div class="bfState">状态：</div>
+        <input type="button" class="resetCxBtn1 tcBtn fr" value="重置">
+        <input type="button" class="bfPlanCxBtn1 tcBtn fr" value="查询">
+    </div>
+
+    <span id="popupPageBakTableInfo"></span>
+
+    <div class="PageDivW popupPageBakPaging">
+        <div class="x_daohang">
+            <input type="hidden" name="hasPreviousPage"/>
+            <input type="hidden" name="hasNextPage"/>
+            <input type="hidden" name="prePage"/>
+            <input type="hidden" name="nextPage"/>
+            <span>
+              共 <span class="totalPages"></span>页&nbsp;跳转至&nbsp;&nbsp;<input type="text" class="k_kuan4 b_bk">&nbsp;页&nbsp;
+             <input type="button" name="" class="tz_anniu tcBtn" value="跳转">
+           </span>
+        </div>
+        <div class="x_daohang">
+            <ul class="k_kuan3 s_shou pageNoLists ul_leibiao">
+            </ul>
+        </div>
+        <div class="x_daohang"><span>共<span class="totalNumbers"></span>条&nbsp;&nbsp;每页</span>
+            <select class="yema pageSize">
+                <option value="">10</option>
+                <option value="">9</option>
+                <option value="">8</option>
+                <option value="">7</option>
+                <option value="">6</option>
+                <option value="">5</option>
+            </select>
+            条
+        </div>
+    </div>
+    <div class="tcbtnDiv borderTn marginT0">
+        <input type="button" class="pageBakPopupDiv_saveBtn tcBtn" value="应用备份">
+        <input type="button" class="pageBakPopupDiv_cancelBtn tcBtn" value="取消">
+    </div>
+</div>
+
+<textarea style="display:none;" id="popupPageBakTextArea">
+    <table class="bakPlanCxResult">
+        <tr>
+            <th class="bfjlSelect"></th>
+            <th class="bfFloor">操作人</th>
+            <th class="bfTakeTimes">备份时间</th>
+            <th class="bfPro">备份说明</th>
+            <th class="bfCz">操作</th>
+        </tr>
+    {#foreach $T as pageBakInfo}
+    <tr>
+        <input type="hidden" name="popupModuleBakId" value="{$T.pageBakInfo.pageId}"/>
+        <td>
+            <input type="radio" name="bfjlradio">
+        </td>
+        <td>{$T.pageBakInfo.userName}</td>
+        <td>{$T.pageBakInfo.createDate}</td>
+        <td>{$T.pageBakInfo.bakDesc}</td>
+        <td>
+            <span class="bfPreview">预览</span>
+            <span class="bfTrDel">删除</span>
+            <div style="display: none" class="bakRecordHtml" bakRecordId="{$T.pageBakInfo.moduleId}">{$T.pageBakInfo.rowHtml}</div>
+        </td>
+    </tr>
+    {#/for}
+    </table>
+</textarea>

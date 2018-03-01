@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>模板管理</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/new_base2.css"/>
+    <link rel="stylesheet" href="css/backStyle1.css">
+    <link type="text/css" rel="stylesheet" href="js/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body id="body" class="bgfff">
+<!-- 后台头部部分开始 -->
+<div class="renovationTWDiv">
+    <div class="renovationTop width1400">
+        <ul class="renovaModuleUl">
+            <li>
+                <a href="backShouye1.html"><span>首页装修</span></a>
+                <!-- <img src="images/backStage/updown3_acitive.png" class="updown3"> -->
+            </li>
+            <li>
+                <span class="bfjlDiv">备份记录</span>
+                <!-- <img src="images/backStage/updown3.png" class="updown3"> -->
+            </li>
+            <li class="marginR0">
+                <a href="TemplateManagement.html"><span class="colorff6600_1">模板管理</span></a>
+                <!-- <img src="images/backStage/updown3.png" class="updown3"> -->
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 后台头部部分结束 -->
+
+<!-- 模板管理首页部分开始 -->
+<div class="width100 mainDiv">
+
+  <!-- 模板查询部分开始 -->
+    <div class="templateCx">
+      <ul class="templateCxUl">
+        <li>
+          <span class="templateCxTit">模板类型：</span>
+          <select class="templateStyle templateInput">
+            <option value="全部">全部</option>
+            <option value="楼层">楼层</option>
+            <option value="广告位">广告位</option>
+            <option value="图标">图标</option>
+          </select>
+        </li>
+        <li>
+          <span class="templateCxTit">适用商品：</span>
+          <select class="templatePro templateInput">
+            <option value="全部">全部</option>
+            <option value="套餐">套餐</option>
+            <option value="流量">流量</option>
+            <option value="上网卡">上网卡</option>
+            <option value="号码">号码</option>
+            <option value="推荐">推荐</option>
+            <option value="联通精选">联通精选</option>
+            <option value="终端">终端</option>
+          </select>
+        </li>
+        <li>
+          <span class="templateCxTit">模板状态：</span>
+          <select class="templateState templateInput">
+            <option value="全部">全部</option>
+            <option value="已引用">已引用</option>
+            <option value="未引用">未引用</option>
+          </select>
+        </li>
+        <li>
+          <span class="templateCxTit">模板名称：</span>
+          <input type="text" class="templateNameInput templateInput">
+        </li>
+        <li class="width380">
+          <span class="templateCxTit">添加时间：</span>
+          <input id="templateAddStart" class="templateAddStart templateInput" type="text" readonly="true">
+          <img src="images/backStage/date.png" class="dateIcon">
+          <span class="fl toText1">至</span>
+          <input id="templateAddEnd" class="templateAddEnd templateInput" type="text" readonly="true">
+          <img src="images/backStage/date.png" class="dateIcon">
+        </li>
+      </ul>
+      <div class="cxCzDiv">
+        <input type="button" class="templateAddBtn cxCzBtn" value="添加">
+        <input type="button" class="cxResetBtn cxCzBtn" value="重置">
+        <input type="button" class="cxQueryBtn cxCzBtn" value="查询">
+      </div>
+
+    </div>
+  <!-- 模板查询部分结束 -->
+    <table class="templateTable">
+      <tr>
+        <th class="templateThIndex"></th>
+        <th class="templateThName">模板名称</th>
+        <th class="templateThStyle">模板类型</th>
+        <th class="templateThAddTime">添加时间</th>
+        <th class="templateThCzperson">操作人</th>
+        <th class="templateThState">审核状态</th>
+        <th class="templateThCz">操作</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>模板名称1</td>
+        <td>楼层模板</td>
+        <td>2015/11/24    9:00:20</td>
+        <td>王明</td>
+        <td>已引用</td>
+        <td>
+          <a href="###" class="templateCk">查看</a>
+          <a href="###" class="templateEdite">编辑</a>
+          <a href="###" class="templateDel">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>模板名称2</td>
+        <td>广告位模板</td>
+        <td>2015/11/24    9:00:20</td>
+        <td>王明</td>
+        <td>已引用</td>
+        <td>
+          <a href="###" class="templateCk">查看</a>
+          <a href="###" class="templateEdite">编辑</a>
+          <a href="###" class="templateDel">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>模板名称3</td>
+        <td>图标模板</td>
+        <td>2015/11/24    9:00:20</td>
+        <td>王明</td>
+        <td>未引用</td>
+        <td>
+          <a href="###" class="templateCk">查看</a>
+          <a href="###" class="templateEdite">编辑</a>
+          <a href="###" class="templateDel">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>模板名称4</td>
+        <td>图标模板</td>
+        <td>2015/11/24    9:00:20</td>
+        <td>王明</td>
+        <td>未引用</td>
+        <td>
+          <a href="###" class="templateCk">查看</a>
+          <a href="###" class="templateEdite">编辑</a>
+          <a href="###" class="templateDel">删除</a>
+        </td>
+      </tr>
+    </table>
+    <div class="PageDivW PageDivW1">
+    	<div class="x_daohang">
+    		<span>
+              共9页&nbsp;跳转至&nbsp;&nbsp;
+    		<input style="text" class="k_kuan4 b_bk">&nbsp;页&nbsp;
+    		<a href="#"><input type="button" name="" class="tz_anniu tcBtn" value="跳转"></a>
+    		</span>
+    	</div>
+    	<div class="x_daohang">
+    		<ul id="ul_leibiao" class="k_kuan3 s_shou">
+    			<li>
+    			<img src="images/backStage/arrowLeft_grey.png" class="pageBtnLeft">
+    			</li>
+    			<li class="PageLi PageNow">1</li>
+    			<li class="PageLi">2</li>
+    			<li class="PageLi">3</li>
+    			<li class="PageLi">4</li>
+    			<li class="PageLi">5</li>
+    			<li>
+    			<img src="images/backStage/arrowRight.png" class="pageBtnRight">
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="x_daohang">
+    		<span>共90条&nbsp;&nbsp;每页</span>
+    		<select class="yema">
+    			<option value="">10条</option>
+    			<option value="">9条</option>
+    			<option value="">8条</option>
+    			<option value="">7条</option>
+    			<option value="">6条</option>
+    			<option value="">5条</option>
+    		</select>
+    	</div>
+    </div>
+</div>
+<!-- 模板管理首页部分结束 -->
+
+<!-- 添加模板部分开始 -->
+
+<div class="width100 CzTemplateDiv">
+  <div class="CzTemplateDivHead">
+    <div class="CzTemplateDivHeadTab">创建模板</div>
+  </div>
+
+  <div class="TemplateContentDiv">
+    <ul class="TemplateContentUl">
+      <li>
+        <div class="TemplateContentTit fl">模板名称：</div>
+        <div class="TemplateContent1 fl">
+          <input type="text" class="templateAddName color999" maxLength="15" value="15字以内">
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li>
+        <div class="TemplateContentTit fl">模板类型：</div>
+        <div class="TemplateContent1 fl">
+          <select class="templateAddStyle">
+            <option value="floorTemplate">楼层模板</option>
+            <option value="AdTemplate">广告位模板</option>
+            <option value="IconLI">图标模板</option>
+          </select>
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li class="floorTemplate templateLi">
+        <div class="TemplateContentTit fl">适用商品：</div>
+        <div class="TemplateContent1 fl">
+          <ul class="templateAddForPro">
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="lttj"  class="templateAddForProInput">
+              <label for="lttj">推荐（联通精选）</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="ll"  class="templateAddForProInput">
+              <label for="ll">流量</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="kuandai"  class="templateAddForProInput">
+              <label for="kuandai">宽带</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="taocan"  class="templateAddForProInput">
+              <label for="taocan">套餐</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="number"  class="templateAddForProInput">
+              <label for="number">号码</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="phoneAcce"  class="templateAddForProInput">
+              <label for="phoneAcce">终端</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="internetCard"  class="templateAddForProInput">
+              <label for="internetCard">上网卡</label>
+            </li>
+          </ul>
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li class="AdTemplate templateLi">
+        <div class="TemplateContentTit fl">适用商品：</div>
+        <div class="TemplateContent1 fl">
+          <ul class="templateAddForPro">
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="taocan_1"  class="templateAddForProInput1">
+              <label for="taocan_1">套餐（号卡）</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="ll_1"  class="templateAddForProInput1">
+              <label for="ll_1">流量</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="phone_1"  class="templateAddForProInput1">
+              <label for="phone_1">合约机</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="phone_2"  class="templateAddForProInput1">
+              <label for="phone_2">裸机</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="kuandai_1"  class="templateAddForProInput1">
+              <label for="kuandai_1">宽带</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="internetCard_1"  class="templateAddForProInput1">
+              <label for="internetCard_1">上网卡</label>
+            </li>
+          </ul>
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li class="floorTemplate AdTemplate templateLi">
+        <div class="TemplateContentTit fl">模板代码：</div>
+        <div class="TemplateContent1 fl">
+          <div class="templatePicDiv fl">
+            <img src="" class="templatePic">
+          </div>
+          <ul class="templateCzUl fl">
+            <li>
+              <input type="button" class="addCodeBtn cz1Btn" value="上传">
+            </li>
+            <li>
+              <input type="button" class="thCodeBtn cz1Btn dn" value="替换">
+            </li>
+            <li>
+              <input type="button" class="delCodeBtn cz1Btn dn" value="删除">
+            </li>
+          </ul>
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li class="IconLI templateLi">
+        <div class="TemplateContentTit fl">适用商品：</div>
+        <div class="TemplateContent1 fl">
+          <ul class="templateAddForPro">
+            <li>
+              <input type="checkbox" name="templateAddForPro1" id="taocan_2"  class="templateAddForProInput2">
+              <label for="taocan_2">套餐（号卡）</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="ll_2"  class="templateAddForProInput2">
+              <label for="ll_2">流量</label>
+            </li>
+            <li>
+              <input type="checkbox" name="templateAddForPro" id="internetCard_2"  class="templateAddForProInput2">
+              <label for="internetCard_2">上网卡</label>
+            </li>
+          </ul>
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li class="IconLI templateLi">
+        <div class="TemplateContentTit fl">图标：</div>
+        <div class="TemplateContent1 fl">
+          <div class="templatePicDiv1 fl">
+            <img src="" class="templatePic">
+          </div>
+          <ul class="templateCzUl fl">
+            <li>
+              <input type="button" class="addCodeBtn cz1Btn" value="上传">
+            </li>
+            <li>
+              <input type="button" class="thCodeBtn cz1Btn dn" value="替换">
+            </li>
+            <li>
+              <input type="button" class="delCodeBtn cz1Btn dn" value="删除">
+            </li>
+          </ul>
+          <div class="iconGZ">
+            <p>icon设计规范：</p>
+            <p>1、尺寸：30*30；</p>
+            <p>2、大小：小于2KB</p>
+          </div>
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+      <li>
+        <div class="TemplateContentTit fl">模板备注：</div>
+        <div class="TemplateContent1 fl">
+          <input type="text" class="templateAddPs color999" maxLength="50" value="50字以内">
+        </div>
+        <div class="clrDiv"></div>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="templateBtnDiv">
+    <li>
+      <input type="button" class="templateCode_save cz1Btn" value="保存">
+    </li>
+    <li>
+      <input type="button" class="templateCode_cancel cz1Btn" value="取消">
+    </li>
+  </ul>
+
+</div>
+<!-- 添加模板部分结束 -->
+
+
+
+<!-- js引入 -->
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/jedate/jquery.jedate.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+</body>
+</html>

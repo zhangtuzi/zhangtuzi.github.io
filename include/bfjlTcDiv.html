@@ -1,0 +1,121 @@
+
+    <!-- 备份记录弹层部分开始 -->
+    <div class="tcDiv bfjlTcDiv">
+      <div class="tcTop">
+        <span class="fl">备份记录</span>
+        <span class="colseBtn fr">X</span>
+      </div>
+      <div class="fbPlanCxDiv">
+        <div class="bfTimes">备份时间：</div>
+        <input id="bfTimeStart" class="bfTimesInput" type="text" readonly="true">
+        <img src="images/backStage/date.png" class="dateIcon">
+        <span class="fl toText1">至</span>
+        <input id="bfTimeEnd" class="bfTimesInput" type="text" readonly="true">
+        <img src="images/backStage/date.png" class="dateIcon">
+        <div class="bfState">状态：</div>
+        <select class="bfTimesInput">
+          <option value="全部">全部</option>
+          <option value="已生效">已生效</option>
+          <option value="未生效">未生效</option>
+        </select>
+
+        <input type="button" class="resetCxBtn1 tcBtn fr" value="重置">
+        <input type="button" class="bfPlanCxBtn1 tcBtn fr" value="查询">
+      </div>
+      <table class="bfPlanCxResult">
+        <tr>
+          <th class="bfjlSelect"></th>
+          <th class="bfFloor">模块名称</th>
+          <th class="bfPro">备份说明</th>
+          <th class="bfCzPerson">操作人</th>
+          <th class="bfTakeTimes">备份时间</th>
+          <th class="bfState1">状态</th>
+          <th class="bfCz">操作</th>
+        </tr>
+        <tr>
+          <td><input type="radio" name="bfjlradio" value=""></td>
+          <td>XX模块</td>
+          <td>说明说明说明</td>
+          <td>李静</td>
+          <td>2016/7/10    0:00:00</td>
+          <td>已生效</td>
+          <td>
+            <span class="bfPreview">预览</span>
+            <span class="bfTrDel">删除</span>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="bfjlradio" value=""></td>
+          <td>XX模块</td>
+          <td>说明说明说明</td>
+          <td>李静</td>
+          <td>2016/6/29    23:59:59</td>
+          <td>已生效</td>
+          <td>
+            <span class="bfPreview">预览</span>
+            <span class="bfTrDel">删除</span>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="bfjlradio" value=""></td>
+          <td>XX模块</td>
+          <td>说明说明说明</td>
+          <td>李静</td>
+          <td>2016/6/20    23:59:59</td>
+          <td>未生效</td>
+          <td>
+            <span class="bfPreview">预览</span>
+            <span class="bfTrDel">删除</span>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="bfjlradio" value=""></td>
+          <td>XX模块</td>
+          <td>说明说明说明</td>
+          <td>李静</td>
+          <td>2016/6/12    0:00:00</td>
+          <td>未生效</td>
+          <td>
+            <span class="bfPreview">预览</span>
+            <span class="bfTrDel">删除</span>
+          </td>
+        </tr>
+      </table>
+      <div class="PageDivW">
+          <div class="x_daohang">
+            <span>
+              共9页&nbsp;跳转至&nbsp;&nbsp;<input style="text" class="k_kuan4 b_bk">&nbsp;页&nbsp;
+             <a href="#"><input type="button" name="" class="tz_anniu tcBtn" value="跳转"></a>
+           </span>
+          </div>
+           <div class="x_daohang">
+               <ul class="k_kuan3 s_shou ul_leibiao">
+                   <li>
+                       <img src="images/backStage/arrowLeft_grey.png" class="pageBtnLeft">
+                   </li>
+                   <li class="PageLi PageNow">1</li>
+                   <li class="PageLi">2</li>
+                   <li class="PageLi">3</li>
+                   <li class="PageLi">4</li>
+                   <li class="PageLi">5</li>
+                   <li>
+                       <img src="images/backStage/arrowRight.png" class="pageBtnRight">
+                   </li>
+               </ul>
+           </div>
+           <div class="x_daohang">	<span>共90条&nbsp;&nbsp;每页</span>
+               <select class="yema">
+                   <option value="">10条</option>
+                   <option value="">9条</option>
+                   <option value="">8条</option>
+                   <option value="">7条</option>
+                   <option value="">6条</option>
+                   <option value="">5条</option>
+               </select>
+           </div>
+       </div>
+       <div class="tcbtnDiv borderTn marginT0">
+          <input type="button" class="bfjlTcDiv_saveBtn tcBtn" value="应用备份">
+          <input type="button" class="bfjlTcDiv_cancelBtn tcBtn" value="取消">
+      </div>
+    </div>

@@ -1,0 +1,120 @@
+<!-- 自定义广告部分开始 -->
+<div class="tcDiv zdyTcDiv">
+  <div class="tcTop">
+    <span class="fl tc_tit">广告位装修</span>
+    <span class="colseBtn zdyTcDiv_cancelBtn fr">X</span>
+  </div>
+  <ul class="tcContent">
+    <li class="tcContentLI">
+      <div class="fl tcItemTit">主标题：</div>
+      <div class="fl tcItemContent">
+        <input type="text" maxLength="15" class="mainTit color999 tcInput" value="15字以内">
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+    <li class="tcContentLI">
+      <div class="fl tcItemTit">副标题：</div>
+      <div class="fl tcItemContent">
+        <input type="text" maxLength="20" class="twoTit color999 tcInput" value="20字以内">
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+    <li class="tcContentLI">
+      <div class="fl tcItemTit">图片：</div>
+      <div class="fl tcItemContent">
+        <div class="fl AdPicDiv"></div>
+        <div class="fl positionR">
+	         <div class="addPicBtn pointer lintelAddPicBtn">
+            <strong>+</strong>
+            添加图片
+          </div>
+          <div class="thPic pointer">
+            <img src="images/backStage/tihuanIcon.png" class="thIcon fl">
+            替换图片
+          </div>
+          <p class="picTips">（格式：jpg／png／gif  尺寸：292*210 大小：小于100KB）</p>
+        </div>
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+    <li class="tcContentLI">
+      <div class="fl tcItemTit">链接：</div>
+      <div class="fl tcItemContent">
+        <ul class="linkUl margin0">
+          <li>
+            <input type="radio" name="zdylinkStyle1" id="zdyProLink1" checked="checked" class="linkinput1 ProLink">
+            <label for="zdyProLink1">输入链接</label>
+          </li>
+          <li>
+            <input type="radio" name="zdylinkStyle1" id="zdyProSel1" class="linkinput1 ProSel">
+            <label for="zdyProSel1">选择商品</label>
+          </li>
+        </ul>
+        <div class="linkinputDiv margin0">
+          <input type="text" class="linkInput menmeiAdLink">
+          <span class="linkPro">选择商品</span>
+          <span class="linkInputClear">清空</span>
+        </div>
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+    <li class="tcContentLI zdyXcy">
+      <div class="fl tcItemTit">宣传语：</div>
+      <div class="fl tcItemContent">
+        <textarea class="ltjx1AdXcy" maxlength="50"></textarea>
+        <p class="color999 xcyTips">50字以内，每两条中间用‘；’分隔。前台用户，鼠标聚焦产品位时，可查阅“宣传语”。</p>
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+    <li class="tcContentLI">
+      <div class="fl tcItemTit"><span class="zdyProStyle">标签类型：</span></div>
+      <div class="fl tcItemContent">
+        <ul class="bqStyleUl marginL0 zdyProStyle">
+          <li>
+            <input type="radio" name="zdyAdLink_1" checked="checked"
+             data-class="pro_style bgfff" data-text="无" class="linkinput1 styleNone labelInput1">
+            <label for="">无</label>
+          </li>
+          <li>
+            <input type="radio" name="zdyAdLink_1" data-class="pro_style newProStyle"
+             data-text="新品"  class="linkinput1 newPro labelInput2">
+            <label for="">新品</label>
+            <div class="newProStyle proStyle">新品</div>
+          </li>
+          <li>
+            <input type="radio" name="zdyAdLink_1" data-class="pro_style hotProStyle"
+             data-text="热卖" class="linkinput1 hotPro labelInput2">
+            <label for="">热卖</label>
+            <div class="hotProStyle proStyle">热卖</div>
+          </li>
+          <li>
+            <input type="radio" name="zdyAdLink_1" data-class="pro_style cxProStyle"
+             data-text="促销" class="linkinput1 cxPro labelInput2">
+            <label for="">促销</label>
+            <div class="cxProStyle proStyle">促销</div>
+          </li>
+        </ul>
+        <div class="clrDiv"></div>
+        <p>
+            <input type="checkbox" class="Adlock fl">
+            <label for="" class="blueColor fl">锁定</label>
+            <span class="color999">（锁定后在失效之前省分不能替换总部的内容）</span>
+        </p>
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+    <li class="AdlockTimeLi tcContentLI">
+      <div class="fl tcItemTit">锁定截止时间：</div>
+      <div class="fl tcItemContent">
+        <input class="phone1lockStopTime1 timeInput2" id="zdylockStop1" type="text" readonly="" style="float:left;">
+        <img src="images/backStage/date.png" class="dateIcon">
+      </div>
+      <div class="clrDiv"></div>
+    </li>
+  </ul>
+  <div class="space30"></div>
+  <div class="tcbtnDiv tcbtnDiv1">
+      <input type="button" class="zdyTcDiv_saveBtn tcBtn" value="确定">
+      <input type="button" class="zdyTcDiv_cancelBtn tcBtn" value="取消">
+  </div>
+</div>

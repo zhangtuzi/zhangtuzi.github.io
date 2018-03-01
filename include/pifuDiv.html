@@ -1,0 +1,111 @@
+<!-- 编辑门楣广告部分开始 -->
+        <style>
+            .tcDiv1 {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                z-index: 550;
+                background: #fff;
+                display: none;
+            }
+            .pifuDiv {
+                width: 690px;
+                margin-left: -330px;
+                position: absolute;
+                padding-bottom: 30px;
+            }
+            .save_list{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                cursor: pointer;
+            }
+            .save_list img{
+                width: 14px;
+                vertical-align: middle;
+                margin-top: -2px;
+            }
+            .save_list i{
+                font-size: 12px;
+                color: #0000ff;
+            }
+            .clear_data{
+                position: absolute;
+                right: 20px;
+                bottom: -60px;
+                cursor: pointer;
+            }
+            .clear_data i{
+                font-size: 12px;
+                color: #0000ff;
+            }
+            .clear_data img{
+                width: 14px;
+                vertical-align: middle;
+                margin-top: -2px;
+            }
+
+        </style>
+<div class="tcDiv1  pifuDiv">
+    <div class="tcTop">
+        <span class="fl tc_tit">皮肤管理</span>
+        <span class="colseBtn menmenDiv_cancelBtn fr">X</span>
+    </div>
+    <ul class="tcContent" style="margin-left: 32px;position: relative">
+        <li class="tcContentLI">
+            <div class="fl tcItemTit">标题：</div>
+            <div class="fl tcItemContent">
+                <input type="text" maxlength="15" class="ADTit">
+                <span class="tcTip1">15字以内</span>
+            </div>
+            <div class="clrDiv"></div>
+        </li>
+        <li class="tcContentLI">
+            <div class="fl tcItemTit">图片：</div>
+            <div class="fl tcItemContent">
+                <div class="fl AdPicDiv"></div>
+                <div class="fl positionR">
+                    <div class="addPicBtn pointer lintelAddPicBtn">
+                        <strong>+</strong>
+                        添加图片
+                    </div>
+                    <div class="thPic pointer">
+                        <img src="images/backStage/tihuanIcon.png" class="thIcon fl">
+                        替换图片
+                    </div>
+                    <p class="picTips">（格式：jpg／png／gif  尺寸：1920*100大小：小于100KB）</p>
+                </div>
+            </div>
+            <div class="clrDiv"></div>
+        </li>
+        <!-- <li class="tcContentLI">
+            <div class="fl tcItemTit"></div>
+            <div class="fl tcItemContent dsfbLi">
+                <p>
+                    <input type="checkbox" class="fl Adlock">
+                    <label for="" class="blueColor fl">锁定</label>
+                    <span class="color999">（锁定后在失效之前省分不能替换总部的内容）</span>
+                </p>
+            </div>
+            <div class="clrDiv"></div>
+        </li> -->
+        <li class="tcContentLI AdlockTimeLi">
+            <div class="fl tcItemTit">锁定截止时间：</div>
+            <div class="fl tcItemContent">
+                <input class="phone1lockStopTime1 timeInput2" id="bannerlockStop1_1" type="text" readonly="" style="float:left;">
+                <img src="images/backStage/date.png" class="dateIcon">
+            </div>
+            <div class="clrDiv"></div>
+        </li>
+        <a class="save_list"><img src="images/backStage/save_list.png"><i>备份记录</i></a>
+        <a class="clear_data"><img src="images/backStage/delIcon3.png"><i>清空数据</i></a>
+    </ul>
+    <div class="space30"></div>
+    <div class="tcbtnDiv tcbtnDiv1">
+        <input type="button" class="menmenDiv_saveBtn tcBtn" value="保存，并备份" style="width: 80px">
+        <input type="button" class="menmenDiv_cancelBtn tcBtn quxiao_btn" value="取消">
+    </div>
+</div>
+<script type="text/javascript" src="//bamboo.10010.com/net5decoration/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="//bamboo.10010.com/net5decoration/js/common/upload.js"></script>
+<script type="text/javascript" src="//bamboo.10010.com/net5decoration/js/common/dialog.js"></script>

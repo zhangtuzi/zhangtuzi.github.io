@@ -7,7 +7,8 @@
     font-size: 20px;
 }
 
-.main-content {
+.main-content,
+.content-warp {
     min-height: calc(100vh - 220px);
 }
 

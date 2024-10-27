@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="免费接口,免费API,免费服务">
+    <meta property="og:site_name" content="免费API">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:author" content="免费API">
+    <meta property="article:tag" content="免费API">
+    <title>随机美女壁纸 -
+        提供免费接口调用平台 </title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script type="text/javascript" src="../js/tongji.js"></script>
+</head>
+
+<body>
+    <header class="nav-warp flex flex-align-center width1200 marginAuto">
+        <menu>
+            <a href="../index.html">首页</a>
+        </menu>
+        <menu>
+            <a href="../shipin.html">视频API专区</a>
+        </menu>
+    </header>
+    <div class="content-warp width1200 marginAuto">
+        <div class="api-title">随机美女壁纸</div>
+        <div class="api-desc">
+            <div class="desc">
+                <span class="desc-title font-bold">API简介：</span>
+                <span class="desc-content">随机输出一张美女壁纸</span>
+            </div>
+            <div class="desc flex flex-align-center">
+                <span class="desc-title font-bold">接口地址：</span>
+                <span class="desc-content">https://api.mhimg.cn/api/girls_img/</span>
+            </div>
+            <div class="desc">
+                <span class="desc-title font-bold">返回格式：</span>
+                <span class="desc-content">JSON</span>
+            </div>
+            <div class="desc">
+                <span class="desc-title font-bold">请求方式：</span>
+                <span class="desc-content">GET</span>
+            </div>
+            <div class="desc flex flex-align-center">
+                <span class="desc-title font-bold">请求参数：</span>
+                <span class="desc-content">https://api.mhimg.cn/api/girls_img/?type=img</span>
+            </div>
+        </div>
+        <div class="result-desc">
+            <div class="font-bold font-25 padding_15">请求参数说明</div>
+            <table class="desc-table">
+                <tr>
+                    <th class="feild_name">参数名称</th>
+                    <th class="feild_is">是否必填</th>
+                    <th class="feild_type">参数类型</th>
+                    <th class="feild_desc">参数说明</th>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>是</td>
+                    <td>string</td>
+                    <td>
+                        json: 输出json格式；</br>
+                        img：输出图片
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="footer-warp width1200 marginAuto">
+        <p>免责声明:请勿将本站提供的接口用于违规的用途中,本站只提供调用服务,不承担任何直接或间接的责任！</p>
+        <p>所有数据都来源网络！仅提供给开发者调试使用不会保存任何外来数据!</p>
+        <p>本站接口数据若侵犯了您的版权请联系站长删除！</p>
+    </footer>
+    <div id="copyTip">
+        <img src="./images/success.jpg" alt="copy success">
+        复制成功</div>
+</body>
+<script>
+    function copySuccess() {
+        const copyTip = document.getElementById('copyTip');
+        copyTip.style.display = 'flex';
+        const _t = setTimeout(() => {
+            copyTip.style.display = 'none';
+            clearTimeout(_t);
+        }, 2000)
+    }
+    /**
+     * 复制内容
+     */
+    async function copyUrl(text) {
+        try {
+            const copy = await navigator.clipboard.writeText(text);
+            copySuccess();
+            console.log('Text copied to clipboard');
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
+    }
+</script>
+
+</html>

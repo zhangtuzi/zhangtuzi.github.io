@@ -120,3 +120,8 @@ th {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.site_link a {
+    margin: 3px 5px;
+    display: inline-block;
+}

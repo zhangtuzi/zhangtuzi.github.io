@@ -16,6 +16,10 @@ a {
     display: flex;
 }
 
+.flex-warp {
+    flex-wrap: wrap;
+}
+
 .flex-justify-center {
     justify-content: center;
 }

@@ -94,10 +94,12 @@ th {
 }
 
 .apiList li {
-    padding: 15px;
-    width: 200px;
+    margin: 0 9px 15px;
+    padding: 12px;
+    width: 250px;
     border: 1px solid #666;
     border-radius: 10px;
+    transition: all 0.5s;
 }
 
 .apiList li:hover {

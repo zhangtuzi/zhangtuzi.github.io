@@ -1,0 +1,120 @@
+.width1200 {
+    max-width: 1200px;
+}
+
+.nav-warp {
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.main-content {
+    min-height: calc(100vh - 220px);
+}
+
+
+.nav-warp menu {
+    padding: 5px 10px;
+}
+
+.desc {
+    padding: 10px 0;
+}
+
+.desc .desc-content {
+    background-color: bisque;
+}
+
+.copyBtn {
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.apiResult {
+    padding: 30px 0;
+}
+
+.desc-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.desc-table td,
+th {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.feild_name,
+.feild_type {
+    width: 200px;
+}
+
+.feild_desc {
+    width: 300px;
+}
+
+.api-title {
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-warp {
+    padding: 30px 0;
+}
+
+#copyTip {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+    padding: 5px 10px;
+    z-index: 10;
+    font-size: 30px;
+    color: rgb(13, 232, 57);
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+#copyTip img {
+    display: inline-block;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.apiList {
+    width: 100%;
+}
+
+.apiList li {
+    padding: 15px;
+    width: 200px;
+    border: 1px solid #666;
+    border-radius: 10px;
+}
+
+.apiList li:hover {
+    background-color: #212195;
+}
+
+.apiList li:hover div {
+    color: #fff !important;
+}
+
+.apiList li .title {
+    font-size: 20px;
+}
+
+
+.apiList li div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

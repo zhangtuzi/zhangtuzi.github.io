@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.marginAuto {
+    margin: 0 auto;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-25 {
+    font-size: 25px;
+}
+
+.padding_15 {
+    padding: 15px 0;
+}
